@@ -3,8 +3,9 @@ import { ParkingSlot, SlotState } from '@/types/parking';
 // This layout matches the S Parking 2F floor plan exactly
 // Measurements are in relative units for scaling
 
-const SLOT_WIDTH = 28;
-const SLOT_HEIGHT = 52;
+// Horizontal slots: wider than tall
+const SLOT_WIDTH = 52;
+const SLOT_HEIGHT = 24;
 const SMALL_GAP = 2;
 
 export const generateParkingSlots = (): ParkingSlot[] => {
